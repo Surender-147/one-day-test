@@ -1,8 +1,16 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&family=Playfair+Display:wght@600&display=swap');
 
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style-type: none;
+}
+
 html,
 body {
+    background: #FAFAFA;
     overflow-x: hidden !important;
     font-family: 'Josefin Sans', sans-serif;
 }
@@ -22,17 +30,7 @@ body {
 }
 
 /*====================================== Media-queries-start ======================================== */
-@media (max-width: 1599.98px) {
-    :root {
-        --font-2xl: 20px;
-        --font-3xl: 28px;
-        --font-4xl: 38px;
-        --font-5xl: 43px;
-        --font-6xl: 52px;
-        --font-7xl: 54px;
-        --font-8xl: 100px;
-    }
-}
+
 
 @media (max-width: 1399.98px) {
     :root {
@@ -40,31 +38,28 @@ body {
         --font-3xl: 24px;
         --font-4xl: 36px;
         --font-5xl: 41px;
-        --font-6xl: 46px;
-        --font-7xl: 54px;
-        --font-8xl: 80px;
+
 
     }
 }
 
 @media (max-width: 1199.98px) {
     :root {
-        --font-4xl: 34px;
-        --font-5xl: 40px;
-        --font-6xl: 48px;
-        --font-7xl: 52px;
-        --font-8xl: 75px;
+        --font-xl: 19px;
+        --font-3xl: 24px;
+        --font-4xl: 36px;
+        --font-5xl: 41px;
+
     }
 }
 
 @media (max-width:991.98px) {
     :root {
-        --font-2xl: 20px;
-        --font-4xl: 28px;
-        --font-5xl: 38px;
-        --font-6xl: 46px;
-        --font-7xl: 38px;
-        --font-8xl: 65px;
+        --font-xl: 19px;
+        --font-3xl: 24px;
+        --font-4xl: 36px;
+        --font-5xl: 41px;
+
     }
 }
 
@@ -75,9 +70,6 @@ body {
         --font-xl: 17px;
         --font-4xl: 30px;
         --font-5xl: 36px;
-        --font-6xl: 44px;
-        --font-7xl: 48px;
-        --font-8xl: 50px;
     }
 }
 
@@ -88,9 +80,6 @@ body {
         --font-3xl: 18px;
         --font-4xl: 28px;
         --font-5xl: 30px;
-        --font-6xl: 32px;
-        --font-7xl: 28px;
-        --font-8xl: 45px;
     }
 }
 
@@ -165,49 +154,313 @@ body {
 /*====================================== FONT-SIZE CLASS END ======================================= */
 
 /* ================================== COMMON CLASS START  ===================================================== */
+.sub_heading{
+    font-size: var(--font-4xl);
+    line-height: normal;
+}
+.sub_para{
+    font-size: var(--font-md);
+    line-height: 120%;
+}
+.opacity_07 {
+    opacity: 0.7 !important;
+}
 .opacity_06 {
     opacity: 0.6 !important;
 }
 
 .common_btn {
-    background: var(--color-red);
-    border-radius: 5px;
-    position: relative;
-    overflow: hidden;
-    padding: 12px 38px;
-    border: 0;
-    color: white;
-    font-size: var(--font-sm);
+    font-size: var(--font-lg);
+    color: #000;
+    background: #fff;
     font-weight: 600;
-    z-index: 1;
+padding: 10px 18px;
+border-radius: 25px;
+border: 1px solid transparent;
+transition: all 0.3s ease-in-out;
+}
+.common_btn:hover {
+    color: #fff !important;
+    background: transparent;
+    border: 1px solid #fff !important;
 }
 
-.common_btn::after {
-    position: absolute;
-    content: "";
-    background-color: #68666683;
-    left: 50%;
-    top: 50%;
-    width: 100%;
-    height: 100%;
-    -webkit-transform: translate(-50%, -50%) scale(0);
-    -ms-transform: translate(-50%, -50%) scale(0);
-    transform: translate(-50%, -50%) scale(0);
-    -webkit-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    border-radius: 50%;
-    z-index: -1;
-}
-
-.common_btn:hover::after {
-    -webkit-transform: translate(-50%, -50%) scale(1);
-    -ms-transform: translate(-50%, -50%) scale(1);
-    transform: translate(-50%, -50%) scale(1);
-    border-radius: 0%;
-}
 
 .index_1 {
     z-index: 1;
 }
+.lh_normal{
+    line-height: normal;
+}
+/* ============DEFINE HERO SECTION============ */
+.hero_bg{
+    background-image: url("../images/png/hero-bg.png");
+    background-size: 100% 100%;
+    background-position: center;
+    border-radius: 25px;
+    margin-left:  22px;
+    margin-right:  22px;
+    
+}
+.hero_img{
+    max-width: 240px;
+}
+ .hero_btn{
+    font-size: var(--font-lg);
+    color: #707070;
+    display: inline-block;
+    font-weight: 600;
+    text-align: center;
+    padding: 8px 16px 5px 16px;
+    line-height: normal !important;
+    border-radius: 25px;
+    background: transparent;
+border: 1px solid #707070;
+transition: all 0.3s ease-in-out;
+  }
+  .hero_btn:hover{
+    border: 1px solid transparent;
+    background: #000;
+    color: #FFF ;
+  }
+/* ============DEFINE JOIN COMMUNITY SECTION============ */
+.join_community_bg{
+    background-image: url("../images/png/join-community.png");
+    background-size: 100% 100%;
+    border-radius: 25px;
+}
+.join_community_img {
+    max-width: 193px;
+}
+.social_media_icons{
+    transition: all 0.3s ease-in-out;
+}
+.social_media_icons:hover{
+    transform: translateY(-7px);
+}
+/* ==========DEIFINE UPCOMING CARD SECTION========== */
+.upcoming_card{
+    background-size: 100% 100%;
+    background-position: center;
+    max-width: 557px;
+    padding: 43px 54px 30px 54px;
+    border-radius: 25px; 
+}
+.upcoming_card_bg1{
+    background-image: url("../images/png/upcoming-card-bg1.png");
+}
+.upcoming_card_bg2{
+    background-image: url("../images/png/upcoming-card-bg2.png") ;
+}
+/* ========DEFINE COMMIT CARDS SECTION======== */
+.comments_cards{
+    border-radius: 16px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    background: #FFF;
+    padding: 16px 15px 13px 13px;
+    max-width: 266px;
+    transition: all 0.3s ease-in-out;
+}
+.comments_cards:hover{
+    box-shadow: -3px 3px 4px 0px rgba(0, 0, 0, 0.20);
+}
+/* ========DEFINE NFT LOOK CARDS SECTION======== */
+.nft_look_cards{
+    border-radius: 16px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    background: #FFF;
+    padding: 16px 10px 15px 10px;
+    max-width: 220px;
+    transition: all 0.3s ease-in-out;
+}
+.nft_look_cards:hover{
+    box-shadow: -3px 3px 4px 0px rgba(0, 0, 0, 0.20);
+}
+/* ========DEFINE LAST NEWS CARDS SECTION======== */
+.news_cards{
+    border-radius: 16px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    background: #FFF;
+    padding: 26px 18px 46px 20px;
+    max-width: 362px;
+    transition: all 0.3s ease-in-out;
+}
+.news_cards:hover{
+    box-shadow: -3px 3px 4px 0px rgba(0, 0, 0, 0.20);
+}
+.news_card_img{
+    max-width: 325px;
+}
+/* ===========DEFINE FOOTER SECTION=========== */
+.footer_bg{
+    border-radius: 25px 25px 0px 0px;
+}
+.footer_logo{
+    max-width:134px ;
+}
 
+.footer_link {
+    position: relative;
+    opacity: 0.6;
+    transition: all 0.3s ease-in-out;
+  }
+  .footer_link:hover{
+    opacity: 1;
+  }
+  
+  .footer_link::after {
+    bottom: -5px;
+    position: absolute;
+    content: "";
+    display: block;
+    height: 0px;
+    width: 0px;
+    background: #fff;
+    transition: width 0.3s;
+    left: 50%;
+  }
+  
+  .footer_link:hover:after {
+    position: absolute;
+    opacity: 1 !important;
+    content: "";
+    height: 2.5px !important;
+    width: 100% !important;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+
+  .form_box{
+    max-width: 432px;
+    margin: 0 auto;
+  }
+ #footer_form  .form-input {
+    border: unset;
+    padding: 0px 0px 0px 16px;
+    max-width: 518px;
+    width: 100%;
+    border-radius: 48px;
+   border: 1px solid #3F3F46;
+   background: #3F3F46;
+  }
+ #footer_form input[type="email"] {
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #fff;
+    text-overflow: ellipsis;
+  }
+ #footer_form input[type="email"]::placeholder {
+    color:#fff; 
+    opacity: 0.55;
+    font-size: 16px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+  }
+  .email_input {
+    width: 75% !important;
+  }
+  .footer_btn {
+    font-size: var(--font-lg);
+    color: #000;
+    background: #fff;
+    font-weight: 600;
+padding: 6px 42px;
+border-radius:0px 25px 25px 0px;
+border: 1px solid transparent;
+transition: all 0.3s ease-in-out;
+}
+.footer_btn:hover {
+    color: #fff !important;
+    background: transparent;
+    border: 1px solid #fff !important;
+}
+/* =====================DEFINE SLICK SLIDER CODE===================== */
+.slick-next, .slick-prev{
+    
+    z-index: 55;
+  }
+  .slick-prev:before{
+    content: url("../images/svg/left-arrow-img.svg") !important;
+  }
+  .slick-next:before{
+    content: url("../images/svg/right-arrow.svg") !important;
+  }
+  .slick-next.slick-disabled:before, .slick-prev.slick-disabled:before{
+    opacity: 1 !important;
+  }
+  .slick-prev{
+    left: -25px !important;
+  }
+  /* DEFINE NFT CARD slider */
+  .nft_cards{
+    width: 266.99px;
+height: 253.903px;
+    border-radius: 25px;
+border: 1px solid rgba(0, 0, 0, 0.15);
+padding: 12px;
+  }
+  .nft-img{
+    max-width: 132.766px;
+  }
+  /* DEIFNE BUY-NOW BUTTON */
+  .buy_now_btn{
+    font-size: var(--font-lg);
+    color: #707070;
+    display: inline-block;
+    font-weight: 600;
+    text-align: center;
+    padding: 8px 16px 5px 16px;
+    line-height: normal !important;
+    border-radius: 25px;
+    background: transparent;
+border: 1px solid rgba(0, 0, 0, 0.46);
+transition: all 0.3s ease-in-out;
+  }
+  .buy_now_btn:hover{
+    background: #000;
+    color: #FFF ;
+  }
+  .explore_nft_card{
+    border-radius: 25px;
+border: 1px solid rgba(0, 0, 0, 0.05);
+background: #FFF;
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.20);
+padding: 22px 16px 22px 29px;
+  }
+@media (min-width:1200px) {
+    .custom_container{
+        max-width: 1140px;
+    }
+}
+@media (max-width:991.98px) {
+    .upcoming_card{
+        max-width: 340px;
+        background-size: cover;
+        padding: 42px 28px 30px 28px;
+    }
+    .join_community_bg{
+        background-size: cover;
+    }
+    .hero_bg{
+        background-size: cover;
+    }
+}
+@media (max-width:767.98px) {
+    .upcoming_card{
+        max-width: unset;
+        background-size: cover;
+        padding: 42px 28px 30px 28px;
+        margin: 0 auto;
+    }
+    .join_community_img{
+        max-width: unset;
+    }
+    .footer_bg{
+        border-radius: 12px 12px 0px 0px;
+    }
+    .hero_img{
+        max-width: 150px !important;
+    }
+}
