@@ -154,6 +154,7 @@ transition: all 0.3s ease-in-out;
     box-shadow: unset;
 }
 .has-search .form-control {
+    cursor: pointer;
     background: transparent;
     padding-left: 2.375rem;
     border: 1px solid #b3b3b3;
