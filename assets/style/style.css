@@ -1,0 +1,213 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&family=Playfair+Display:wght@600&display=swap');
+
+html,
+body {
+    overflow-x: hidden !important;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+:root {
+    /*================================== FONT-SIZES ================================================ */
+    --font-xs: 12px;
+    --font-sm: 14px;
+    --font-md: 16px;
+    --font-lg: 18px;
+    --font-xl: 20px;
+    --font-2xl: 24px;
+    --font-3xl: 36px;
+    --font-4xl:50px ;
+    --font-5xl: 64px;
+
+}
+
+/*====================================== Media-queries-start ======================================== */
+@media (max-width: 1599.98px) {
+    :root {
+        --font-2xl: 20px;
+        --font-3xl: 28px;
+        --font-4xl: 38px;
+        --font-5xl: 43px;
+        --font-6xl: 52px;
+        --font-7xl: 54px;
+        --font-8xl: 100px;
+    }
+}
+
+@media (max-width: 1399.98px) {
+    :root {
+        --font-xl: 19px;
+        --font-3xl: 24px;
+        --font-4xl: 36px;
+        --font-5xl: 41px;
+        --font-6xl: 46px;
+        --font-7xl: 54px;
+        --font-8xl: 80px;
+
+    }
+}
+
+@media (max-width: 1199.98px) {
+    :root {
+        --font-4xl: 34px;
+        --font-5xl: 40px;
+        --font-6xl: 48px;
+        --font-7xl: 52px;
+        --font-8xl: 75px;
+    }
+}
+
+@media (max-width:991.98px) {
+    :root {
+        --font-2xl: 20px;
+        --font-4xl: 28px;
+        --font-5xl: 38px;
+        --font-6xl: 46px;
+        --font-7xl: 38px;
+        --font-8xl: 65px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    :root {
+        --font-md: 14px;
+        --font-lg: 16px;
+        --font-xl: 17px;
+        --font-4xl: 30px;
+        --font-5xl: 36px;
+        --font-6xl: 44px;
+        --font-7xl: 48px;
+        --font-8xl: 50px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    :root {
+        --font-lg: 16px;
+        --font-2xl: 16px;
+        --font-3xl: 18px;
+        --font-4xl: 28px;
+        --font-5xl: 30px;
+        --font-6xl: 32px;
+        --font-7xl: 28px;
+        --font-8xl: 45px;
+    }
+}
+
+/* ==========================================DEFINE FONT FAMILY========================================== */
+.ff_playfair {
+    font-family: 'Playfair Display', serif;
+}
+
+/*====================================== FONT-WEIGHT CLASS START ======================================= */
+.fw_medium {
+    font-weight: 500;
+}
+
+.fw_semibold {
+    font-weight: 600 !important;
+}
+
+.fw_300 {
+    font-weight: 300;
+}
+
+/*====================================== FONT-SIZE CLASS START ======================================= */
+
+.font_xs {
+    font-size: var(--font-xs) !important;
+}
+
+.font_sm {
+    font-size: var(--font-sm) !important;
+}
+
+.font_md {
+    font-size: var(--font-md) !important;
+}
+
+.font_lg {
+    font-size: var(--font-lg) !important;
+}
+
+.font_xl {
+    font-size: var(--font-xl) !important;
+}
+
+.font_2xl {
+    font-size: var(--font-2xl) !important;
+}
+
+.font_3xl {
+    font-size: var(--font-3xl) !important;
+}
+
+.font_4xl {
+    font-size: var(--font-4xl) !important;
+}
+
+.font_5xl {
+    font-size: var(--font-5xl) !important;
+}
+
+.font_6xl {
+    font-size: var(--font-6xl) !important;
+}
+
+.font_7xl {
+    font-size: var(--font-7xl) !important;
+}
+
+.font_8xl {
+    font-size: var(--font-8xl) !important;
+}
+
+/*====================================== FONT-SIZE CLASS END ======================================= */
+
+/* ================================== COMMON CLASS START  ===================================================== */
+.opacity_06 {
+    opacity: 0.6 !important;
+}
+
+.common_btn {
+    background: var(--color-red);
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    padding: 12px 38px;
+    border: 0;
+    color: white;
+    font-size: var(--font-sm);
+    font-weight: 600;
+    z-index: 1;
+}
+
+.common_btn::after {
+    position: absolute;
+    content: "";
+    background-color: #68666683;
+    left: 50%;
+    top: 50%;
+    width: 100%;
+    height: 100%;
+    -webkit-transform: translate(-50%, -50%) scale(0);
+    -ms-transform: translate(-50%, -50%) scale(0);
+    transform: translate(-50%, -50%) scale(0);
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.common_btn:hover::after {
+    -webkit-transform: translate(-50%, -50%) scale(1);
+    -ms-transform: translate(-50%, -50%) scale(1);
+    transform: translate(-50%, -50%) scale(1);
+    border-radius: 0%;
+}
+
+.index_1 {
+    z-index: 1;
+}
+
