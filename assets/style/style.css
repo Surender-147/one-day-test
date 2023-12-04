@@ -78,8 +78,8 @@ body {
         --font-lg: 16px;
         --font-2xl: 16px;
         --font-3xl: 18px;
-        --font-4xl: 28px;
-        --font-5xl: 30px;
+        --font-4xl: 30px;
+        --font-5xl: 34px;
     }
 }
 
@@ -211,7 +211,7 @@ transition: all 0.3s ease-in-out;
     display: inline-block;
     font-weight: 600;
     text-align: center;
-    padding: 8px 16px 5px 16px;
+    padding: 8px 25px 8px 25px;
     line-height: normal !important;
     border-radius: 25px;
     background: transparent;
@@ -227,6 +227,7 @@ transition: all 0.3s ease-in-out;
 .join_community_bg{
     background-image: url("../images/png/join-community.png");
     background-size: 100% 100%;
+    background-position: center;
     border-radius: 25px;
 }
 .join_community_img {
@@ -455,6 +456,7 @@ padding: 22px 16px 22px 29px;
     }
     .join_community_bg{
         background-size: cover;
+        border-radius: 32px;
     }
     .hero_bg{
         background-size: cover;
@@ -481,6 +483,9 @@ padding: 22px 16px 22px 29px;
     }
 }
 @media (max-width:575.98px) {
+    .hero_img {
+        max-width: 100px !important;
+    }
     .hero_bg{
         margin: 12px;
     }
@@ -506,6 +511,12 @@ padding: 22px 16px 22px 29px;
     }
     .explore_nft_card{
         padding: 22px 16px ;
+    }
+    #footer_form .form-input{
+        max-width: 300px;
+    }
+    .footer_btn{
+        padding: 6px 24px;
     }
 }
 

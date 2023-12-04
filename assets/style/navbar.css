@@ -86,7 +86,7 @@ nav li a:hover::after {
     color: #FFF ;
     font-weight: 600;
     text-align: center;
-    padding: 8px 16px 5px 16px;
+    padding: 8px 25px 7px 25px;
     line-height: normal !important;
     border-radius: 25px;
     text-decoration: none;
@@ -200,27 +200,8 @@ transition: all 0.3s ease-in-out;
         min-height: 40vh !important;
     }
 
-    .hero_btn {
-        padding: 6px 6px 6px 14px !important;
-    }
-
     .arrow_bg {
         padding: 10px !important;
-    }
-
-    .hero_icons {
-        overflow: auto !important;
-        min-width: 500px !important;
-    }
-
-
-    .hero_icons::-webkit-scrollbar {
-        height: 2px !important;
-    }
-
-    .hero_icons::-webkit-scrollbar-thumb {
-        border-radius: 10px !important;
-        background: #D1D1D1;
     }
     .nav_btn{
         font-size: var(--font-lg);
