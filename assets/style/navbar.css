@@ -4,7 +4,9 @@
 .index_999 {
     z-index: 999;
 }
-
+.bg_black{
+    background: #000;
+}
 .index_1 {
     z-index: 1;
 }
@@ -25,7 +27,7 @@ nav li a::after {
     border-radius: 1px;
     bottom: -5px !important;
     width: 0;
-    background-color: var(--color-purple);
+    background-color: #fff;
     left: 50%;
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
@@ -37,7 +39,7 @@ nav li a::after {
 }
 
 nav li a:hover::after {
-    color: var(--color-purple);
+    color: #fff;
     width: 100%;
 }
 
@@ -45,35 +47,13 @@ nav li a:hover::after {
     opacity: 1 !important;
 }
 
-.nav_white_line::after {
-    position: absolute;
-    content: "";
-    height: 2px;
-    border-radius: 1px;
-    bottom: -5px !important;
-    width: 0;
-    background-color: #fff !important;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    transform: translateX(-50%);
-    bottom: 0;
-    -webkit-transition: all 0.3s linear;
-    -o-transition: all 0.3s linear;
-    transition: all 0.3s linear;
-}
-
-.nav_white_line:hover::after {
-    color: #fff;
-    width: 100%;
-}
-
 .line1,
 .line2,
 .line3 {
     content: "";
-    height: 3px;
+    height: 4px;
     width: 30px;
+    border-radius: 12px;
 }
 
 .menu {
@@ -169,14 +149,33 @@ transition: all 0.3s ease-in-out;
     left: 50%;
     transform: translateX(-50%);
   }
-.w_45 {
-    width: 45px !important;
+
+  .form-control:focus{
+    box-shadow: unset;
+}
+.has-search .form-control {
+    background: transparent;
+    padding-left: 2.375rem;
+    border: 1px solid #b3b3b3;
+    border-radius: 100px;
+    max-width: 185px;
+}
+
+.has-search .form-control-feedback {
+    position: absolute;
+    left: 10px;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
 }
 
 /* ==========DEFINE HERO SECTION CSS========== */
-
-
-@media (max-width:767.98px) {
+@media (max-width:991.98px) {
     .overlay {
         position: absolute;
         background: #000 !important;
@@ -242,14 +241,9 @@ transition: all 0.3s ease-in-out;
         right: 18px;
     }
 
-    .nav_logo {
+    .navbar_logo {
         max-width: 50px !important;
         max-height: 50px !important;
-    }
-
-    
-    .navbar-logo {
-        max-width: 115px !important;
     }
 
     .line1,

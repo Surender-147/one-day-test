@@ -220,8 +220,8 @@ transition: all 0.3s ease-in-out;
   }
   .hero_btn:hover{
     border: 1px solid transparent;
-    background: #000;
-    color: #FFF ;
+    background: #fff;
+    color: #000 ;
   }
 /* ============DEFINE JOIN COMMUNITY SECTION============ */
 .join_community_bg{
@@ -276,6 +276,18 @@ transition: all 0.3s ease-in-out;
 .nft_look_cards:hover{
     box-shadow: -3px 3px 4px 0px rgba(0, 0, 0, 0.20);
 }
+/* ========DEFINE NFT LOOK CARDS SECTION======== */
+.tab_cards{
+    border-radius: 16px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    background: #FFF;
+    padding: 16px 10px 15px 10px;
+    max-width: 240px;
+    transition: all 0.3s ease-in-out;
+}
+.tab_cards:hover{
+    box-shadow: -3px 3px 4px 0px rgba(0, 0, 0, 0.20);
+}
 /* ========DEFINE LAST NEWS CARDS SECTION======== */
 .news_cards{
     border-radius: 16px;
@@ -293,6 +305,7 @@ transition: all 0.3s ease-in-out;
 }
 /* ===========DEFINE FOOTER SECTION=========== */
 .footer_bg{
+    background: #000;
     border-radius: 25px 25px 0px 0px;
 }
 .footer_logo{
@@ -463,4 +476,86 @@ padding: 22px 16px 22px 29px;
     .hero_img{
         max-width: 150px !important;
     }
+    .nft_cards {
+        max-width: 250px;
+    }
 }
+@media (max-width:575.98px) {
+    .hero_bg{
+        margin: 12px;
+    }
+    .footer_logo{
+        max-width: 90px;
+    }
+    .nft_cards {
+        max-width: unset;
+        width: 90%;
+    }
+    .slick-initialized .slick-slide{
+        display: flex !important;
+        justify-content: center !important;
+    }
+    .slick-dots li button:before{
+        font-size: 14px !important;
+    }
+    .slick-dots{
+        bottom: -30px !important;
+    }
+    .sub_heading{
+        text-align: center;
+    }
+    .explore_nft_card{
+        padding: 22px 16px ;
+    }
+}
+
+
+  .tab_panel2 {
+    display: none;
+  }
+  
+  .tab_panel3 {
+    display: none;
+  }
+  
+  .tab_panel4 {
+    display: none;
+  }  
+  .tab_panel5 {
+    display: none;
+  }  
+  .tab_btn{
+    font-size: var(--font-xl) !important;
+    font-weight: 500 !important;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.13);
+    color: #000;
+    display: inline-block;
+    padding: 10px 50px;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    cursor: pointer;
+  }
+  .active1 {
+    font-size: var(--font-xl) !important;
+    font-weight: 500 !important;
+    border-radius: 10px;
+    background: #000 !important;
+    color: #FFF;
+    padding: 10px 50px;
+  }
+  .view_btn{
+    font-size: var(--font-lg);
+    line-height: normal;
+    font-weight: 500 !important;
+    border-radius: 100px;
+    background: #000 ;
+    color: #FFF;
+    padding: 7px 24px;
+    transition: all 0.3s ease-in-out;
+  }
+  .view_btn:hover{
+    color: #000;
+    background: transparent;
+    border: 1px solid #000;
+  }
